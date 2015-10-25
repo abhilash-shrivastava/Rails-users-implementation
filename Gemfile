@@ -6,6 +6,10 @@ gem 'faker'
 
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
+
 
 gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -45,7 +49,6 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console'
   gem 'spring'
-  gem 'pg'
 end
 
 group :test do
@@ -55,7 +58,6 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
