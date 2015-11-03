@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
 
   def new
-    render 'sessions/new'
+    @user = User.new
   end
 
   def show
@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    current_user
     if @user.save
       render 'show'
     else

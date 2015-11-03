@@ -24,4 +24,8 @@ class SessionsController < ApplicationController
     redirect_to root_url
   end
 
+  def signup
+    render 'users/new'
+  end
+
 end
